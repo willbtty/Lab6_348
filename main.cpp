@@ -75,7 +75,7 @@ int main()
     ifstream fin("matrix_input.txt");
 
     fin >> matrix_size;
-    getline(fin, dummy);
+    getline(fin, dummy); // Use this to get rid of the extra text that accompanies the size
 
     // Error catching, incase the size given in the file is larger than the given max size of 100
     if (matrix_size > MAX_SIZE) {
